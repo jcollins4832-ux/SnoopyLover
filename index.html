@@ -1,1 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snoopy — Fan Page</title>
+  <meta name="description" content="A simple fan site about Snoopy.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-head">
+    <div class="container">
+      <h1>Snoopy</h1>
+      <p class="tagline">A small, friendly fan page</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#fun-facts">Fun facts</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <img id="hero-image" src="assets/snoopy-placeholder.jpg" alt="Snoopy illustration (placeholder)">
+        <div>
+          <h2>Welcome to the Snoopy fan page</h2>
+          <p>Explore Snoopy's world — his friends, adventures, and a little trivia.</p>
+          <button id="random-fact">Show a random fact</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h3>About Snoopy</h3>
+      <p>
+        Snoopy is a beagle and one of the most popular characters from Charles M. Schulz’s comic strip <em>Peanuts</em>.
+        Known for his vivid imagination, the doghouse (his Sopwith Camel), and his friendship with Charlie Brown,
+        Snoopy has become an icon of comics and pop culture.
+      </p>
+      <p class="disclaimer">This is an unofficial fan page. Snoopy and Peanuts are trademarks of Peanuts Worldwide.</p>
+    </section>
+
+    <section id="gallery" class="card">
+      <h3>Gallery</h3>
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Add your own images into /assets and update the img src values -->
+        <figure>
+          <img src="assets/snoopy-placeholder.jpg" alt="Snoopy placeholder image">
+          <figcaption>Snoopy (placeholder)</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/woodstock-placeholder.jpg" alt="Woodstock placeholder image">
+          <figcaption>Woodstock (placeholder)</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/doghouse-placeholder.jpg" alt="Snoopy on doghouse (placeholder)">
+          <figcaption>On his doghouse</figcaption>
+        </figure>
+      </div>
+      <p class="hint">Tip: replace the placeholder images in <code>/assets</code> with licensed or original artwork.</p>
+    </section>
+
+    <section id="fun-facts" class="card">
+      <h3>Fun facts</h3>
+      <ul id="facts-list">
+        <li>Snoopy first appeared on October 4, 1950, in the Peanuts comic strip.</li>
+        <li>He often imagines himself as the World War I Flying Ace.</li>
+        <li>He lives atop his iconic red doghouse.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>Contact (fan mail)</h3>
+      <form id="contact-form">
+        <label>
+          Name
+          <input name="name" type="text" required />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+        <p class="form-status" id="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="container">
+      <p>Made with ❤️ — unofficial Snoopy fan page. <small>© Peanuts Worldwide</small></p>
+      <p><a href="README.md">Repo / instructions</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
